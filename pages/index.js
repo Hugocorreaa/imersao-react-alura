@@ -23,10 +23,24 @@ function Titulo(props) {
 }
 
 export default function PaginaInicial() {
-  //const username = "omariosouto";
 
-  const [username, setUsername] = React.useState("omariosouto");
+  const [username, setUsername] = React.useState("hugocorreaa");
   const roteamento = useRouter();
+  const [followers, setFollowers] = React.useState()
+
+  //requisição API GitHub
+  const dados = fetch(`https://api.github.com/users/${username}`)
+
+  dados.then(function(respostaDoServidor){
+    return respostaDoServidor.json()
+  })
+  .then(function(respostaConvertida){
+    const followers = respostaConvertida.followers
+    return setFollowers(followers)
+
+  })
+
+  
 
 
   return (
@@ -68,7 +82,6 @@ export default function PaginaInicial() {
                 infosDoEvento.preventDefault();
                 console.log('Alguém submeteu o form')
                 roteamento.push('/chat')
-                //window.location.href = '/chat'
             }}
             styleSheet={{
               display: "flex",
@@ -156,6 +169,18 @@ export default function PaginaInicial() {
               }}
             >
               {username}
+            </Text>
+            <Text
+              variant="body4"
+              styleSheet={{
+                color: appConfig.theme.colors.neutrals[200],
+                backgroundColor: appConfig.theme.colors.neutrals[900],
+                marginTop: "5px",
+                padding: "8px",
+                borderRadius: "1000px",
+              }}
+            >
+              {`${followers} Seguidores`}
             </Text>
           </Box>
           {/* Photo Area */}
