@@ -1,7 +1,10 @@
 # Kimetsu no Cord
 
-**Clone do Discord em React NextJs**
-
+<ul>
+ <li><strong>Clone do Discord em React NextJs</strong></li>
+ <li><strong>Projeto criado na Imersão React 2022 da Alura</strong></li>
+<ul>
+<br><br>
 <table>
  <td>Consome API pública do Github</td>
 </table>
