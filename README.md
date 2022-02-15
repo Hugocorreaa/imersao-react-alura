@@ -6,7 +6,12 @@
 <ul>
 <br><br>
 <table>
- <td>Consome API pública do Github</td>
+ <tr>
+   <td>Link: https://kimetsu-no-discord.vercel.app</td>
+ </tr>
+ <tr>
+  <td>Consome API pública do Github</td>
+ </tr>
 </table>
  
 <img src="https://i.ibb.co/X3rxNYk/imagem-2022-02-15-003914.png">
