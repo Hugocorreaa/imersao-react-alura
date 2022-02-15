@@ -7,7 +7,7 @@
 <br><br>
 <table>
  <tr>
-   <td>Link: https://kimetsu-no-discord.vercel.app</td>
+   <td>Link: https://kimetsu-no-cord.vercel.app</td>
  </tr>
  <tr>
   <td>Consome API pública do Github</td>
